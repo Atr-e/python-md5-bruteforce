@@ -64,7 +64,7 @@ def main():
     print(info)
     
     inp_usr = input(" add md5\n")
-    chrs = string.printable.replace(' \t\n\r\x0b\x0c', '')
+    chrs = "0123456789abcdefghijklmnopqrstuvwxyz"
     print(chrs)
     signal.signal(signal.SIGINT, signal_handler)
     return _attack( chrs,inp_usr )
